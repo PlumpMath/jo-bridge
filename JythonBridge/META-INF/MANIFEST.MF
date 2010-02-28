@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: JythonBridge
+Bundle-SymbolicName: JythonBridge
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: osgi.services.impl.jythonbridge.Activator
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Import-Package: org.eclipse.osgi.framework.console,
+ org.osgi.framework;version="1.3.0",
+ org.python.core,
+ org.python.util,
+ osgi.services.api.iscriptbridge
