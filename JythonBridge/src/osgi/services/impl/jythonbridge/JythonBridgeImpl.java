@@ -13,7 +13,7 @@ public class JythonBridgeImpl implements IScriptBridge {
 	@Override
 	public void addVariableToContext(String objName,Object varToAdd) {
 		interpreter.set(objName,varToAdd);
-		
+		//interpreter.
 	}
 
 	@Override
@@ -56,5 +56,5 @@ public class JythonBridgeImpl implements IScriptBridge {
 		exec_script_statement(scriptToExecute);
 		return interpreter.get(objectResult);
 	}
-
+	
 }
