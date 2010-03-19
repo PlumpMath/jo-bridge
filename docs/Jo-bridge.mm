@@ -65,8 +65,29 @@
 <node CREATED="1267975803836" ID="ID_708480844" MODIFIED="1267975817018" TEXT="manage an OSGi Jython based service">
 <node CREATED="1268505441239" ID="ID_1609069281" MODIFIED="1268505484893" TEXT="possible using the same technique of any other jython objects"/>
 <node CREATED="1268506293935" ID="ID_1304712024" LINK="http://wiki.python.org/jython/JythonMonthly/Articles/September2006/1" MODIFIED="1268506300975" TEXT="see article"/>
+<node CREATED="1268588433388" ID="ID_152905736" MODIFIED="1268588441228" TEXT="Current version">
+<node CREATED="1268588442522" ID="ID_615163968" MODIFIED="1268588485724" TEXT="Jython object must be declared in a .py file &#xa;with the same name (JythonClass in JythonClass.py)"/>
+<node CREATED="1268588496254" ID="ID_1876220486" MODIFIED="1268588522055" TEXT="Python standard class not loaded (datetime not found)">
+<icon BUILTIN="help"/>
+</node>
+<node CREATED="1268588524672" ID="ID_603619999" MODIFIED="1268590058728" TEXT="Class.forName can be solved only using import on manifest">
+<icon BUILTIN="stop"/>
+<node CREATED="1268590013203" FOLDED="true" ID="ID_1352053382" MODIFIED="1268590049743" TEXT="via fragment">
+<icon BUILTIN="button_cancel"/>
+<node CREATED="1268590018574" ID="ID_499540695" MODIFIED="1268590038362" TEXT="doesn&apos;t work - class not found exception">
+<icon BUILTIN="button_cancel"/>
+</node>
+<node CREATED="1268588553856" ID="ID_191487932" MODIFIED="1268588563406" TEXT="at this moment, solved with fragment bundle"/>
+<node CREATED="1268589060929" ID="ID_1960637972" MODIFIED="1268589076198" TEXT="in the fragment, there are import of used services"/>
 </node>
 </node>
+</node>
+</node>
+</node>
+</node>
+<node CREATED="1269027875319" ID="ID_978620137" MODIFIED="1269027928637" POSITION="right" TEXT="Useful links">
+<icon BUILTIN="launch"/>
+<node CREATED="1269027881375" ID="ID_855951203" LINK="http://jythonpodcast.hostjava.net/jythonbook/en/.99/" MODIFIED="1269027899391" TEXT="Free ebook"/>
 </node>
 </node>
 </map>
