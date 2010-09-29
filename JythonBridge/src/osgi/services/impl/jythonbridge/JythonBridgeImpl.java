@@ -5,6 +5,7 @@ import org.python.util.PythonInterpreter;
 
 import osgi.services.api.iscriptbridge.IScriptBridge;
 
+//Test comment - 29/09/10
 
 public class JythonBridgeImpl implements IScriptBridge {
 
