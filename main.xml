@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<project name="jo-bridge" basedir=".">
+
+	<property name="javacFailOnError" value="true"/>	
+
+	<property name="debug" value="true"/> 
+	<property name="project.name" value="${ant.project.name}" />
+	<property name="project.path" value="${basedir}" />	
+	<property name="buildfile.name" value="main.xml"/>
+	<!--<taskdef resource="net/sf/antcontrib/antlib.xml"/>-->
+		
+	<target name="build" description="Execute builds of all jo-bridge components">
+		<!-- build dei servizi di base -->
+		<antcall target="build.base_services"/>
+    </target>
+	
+	<target name="clean" description="Execute clean of all jo-bridge components">
+		<!-- clean dei servizi di base -->
+        <antcall target="clean.base_services"/>		
+    </target>
+	
+	
+	<!-- ***************************************************************************************************************************** -->
+							<!-- Gestione dei task relativi ai servizi di base del sistema -->	
+	<!-- ***************************************************************************************************************************** -->
+	<target name="build.base_services" description="Esegue il build dei servizi di base">
+		<ant antfile="${project.path}\JythonBridge\build.xml" target="build.upate.jar" dir="${project.path}\JythonBridge"/>	
+	</target>
+	
+	<target name="clean.base_services">		
+		<ant antfile="${project.path}\JythonBridge\build.xml" target="clean" dir="${project.path}\JythonBridge"/>	
+    </target>
+		
+</project>
