@@ -72,7 +72,7 @@
 </node>
 <node CREATED="1268588524672" ID="ID_603619999" MODIFIED="1268590058728" TEXT="Class.forName can be solved only using import on manifest">
 <icon BUILTIN="stop"/>
-<node CREATED="1268590013203" FOLDED="true" ID="ID_1352053382" MODIFIED="1268590049743" TEXT="via fragment">
+<node CREATED="1268590013203" ID="ID_1352053382" MODIFIED="1269189022758" TEXT="via fragment">
 <icon BUILTIN="button_cancel"/>
 <node CREATED="1268590018574" ID="ID_499540695" MODIFIED="1268590038362" TEXT="doesn&apos;t work - class not found exception">
 <icon BUILTIN="button_cancel"/>
