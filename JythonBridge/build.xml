@@ -84,7 +84,7 @@
 		<delete dir="${build.result.folder}/@dot"/>
 		<mkdir dir="${build.result.folder}/@dot"/>
 		<path id="@dot.classpath">
-			<pathelement path="../../../../Programmi/eclipse-3.5/plugins/org.eclipse.osgi_3.5.1.R35x_v20090827.jar"/>
+			<!--<pathelement path="../../../../Programmi/eclipse-3.5/plugins/org.eclipse.osgi_3.5.1.R35x_v20090827.jar"/>
 			<pathelement path="../../../../Programmi/eclipse-3.5/plugins/jython.jar"/>
 			<pathelement path="../../../../Programmi/eclipse-3.5/plugins/org.apache.ant_1.7.1.v20090120-1145/lib/ant.jar"/>
 			<pathelement path="../../../../Programmi/eclipse-3.5/plugins/org.apache.ant_1.7.1.v20090120-1145/lib/ant-antlr.jar"/>
@@ -112,7 +112,9 @@
 			<pathelement path="../../../../Programmi/eclipse-3.5/plugins/org.apache.ant_1.7.1.v20090120-1145/lib/ant-weblogic.jar"/>
 			<pathelement path="../../../../Programmi/eclipse-3.5/plugins/org.junit4_4.5.0.v20090824/junit.jar"/>
 			<pathelement path="../../../../Programmi/eclipse-3.5/plugins/org.hamcrest.core_1.1.0.v20090501071000.jar"/>
-			<pathelement path="../../../../Programmi/eclipse-3.5/plugins/javax.servlet_2.5.0.v200806031605.jar"/>
+			<pathelement path="../../../../Programmi/eclipse-3.5/plugins/javax.servlet_2.5.0.v200806031605.jar"/>-->
+			<pathelement path="../libs/org.eclipse.osgi_3.5.1.R35x_v20090827.jar"/>
+			<pathelement path="../libs/jython.jar"/>
 			<pathelement path="../IScriptBridge/bin/"/>
 			<pathelement path="../IScriptBridge/@dot"/>
 			<pathelement path="../SimpleService/bin/"/>
