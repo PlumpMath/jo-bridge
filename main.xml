@@ -24,10 +24,12 @@
 							<!-- Gestione dei task relativi ai servizi di base del sistema -->	
 	<!-- ***************************************************************************************************************************** -->
 	<target name="build.base_services" description="Esegue il build dei servizi di base">
-		<ant antfile="${project.path}\JythonBridge\build.xml" target="build.upate.jar" dir="${project.path}\JythonBridge"/>	
+		<ant antfile="${project.path}\IScriptBridge\build.xml" target="build.jars" dir="${project.path}\IScriptBridge"/>	
+		<ant antfile="${project.path}\JythonBridge\build.xml" target="build.jars" dir="${project.path}\JythonBridge"/>	
 	</target>
 	
 	<target name="clean.base_services">		
+		<ant antfile="${project.path}\IScriptBridge\build.xml" target="clean" dir="${project.path}\IScriptBridge"/>	
 		<ant antfile="${project.path}\JythonBridge\build.xml" target="clean" dir="${project.path}\JythonBridge"/>	
     </target>
 		
