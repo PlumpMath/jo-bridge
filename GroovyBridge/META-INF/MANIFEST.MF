@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: GroovyBridge
+Bundle-SymbolicName: GroovyBridge
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: osgi.services.impl.groovybridge.Activator
+Import-Package: groovy.lang;version="1.8.1",
+ groovy.util;version="1.8.1",
+ org.eclipse.osgi.framework.console,
+ org.osgi.framework;version="1.3.0",
+ osgi.services.api.iscriptbridge
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
