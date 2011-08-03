@@ -1,10 +1,12 @@
 package osgi.services.impl.jythonbridge;
 
+import java.util.Dictionary;
 import java.util.Hashtable;
 
 
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
+import org.osgi.framework.ServiceRegistration;
 import org.eclipse.osgi.framework.console.CommandInterpreter;
 import org.eclipse.osgi.framework.console.CommandProvider;
 
@@ -14,7 +16,7 @@ import osgi.services.api.iscriptbridge.IScriptBridge;
 public class Activator implements BundleActivator,CommandProvider {
 
 	private IScriptBridge bridge=null;
-	
+	private ServiceRegistration reg;
 	/*
 	 * (non-Javadoc)
 	 * @see org.osgi.framework.BundleActivator#start(org.osgi.framework.BundleContext)
@@ -25,7 +27,9 @@ public class Activator implements BundleActivator,CommandProvider {
 		//registro il servizio per esporre questi statement verso il mondo
 		bridge=new JythonBridgeImpl();
 		bridge.addVariableToContext("context", context);
-		context.registerService(IScriptBridge.class.getName(), bridge, null);		
+		Dictionary<String, String> properties=new Hashtable<String, String>();
+		properties.put("language","python");		
+		reg=context.registerService(IScriptBridge.class.getName(), bridge, properties);		
 	}
 
 	/*
@@ -33,6 +37,7 @@ public class Activator implements BundleActivator,CommandProvider {
 	 * @see org.osgi.framework.BundleActivator#stop(org.osgi.framework.BundleContext)
 	 */
 	public void stop(BundleContext context) throws Exception {
+		if(reg!=null) reg.unregister();
 	}
 
 	@Override
